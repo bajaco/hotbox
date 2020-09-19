@@ -2,7 +2,6 @@ import os.path
 import configparser
 import xml.dom.minidom
 import json
-import importlib.resources as pkg_resources
 
 #Configuration class for defining and editing settings resource file
 class ConfigManager:
@@ -12,11 +11,8 @@ class ConfigManager:
         #Load configuration path from conf.ini
         self.config = configparser.ConfigParser()
         self.config.read('hotbox/conf.ini')
-        
         self.load_resource()
 
-        print(self.config['default']['path'])
-    
     def get_resource_path(self):
         return self.config['default']['path']
 
@@ -42,7 +38,6 @@ class ConfigManager:
     
     def is_loaded(self):
         return self.loaded
-
 
     def reconfigure(self):
         try:
@@ -251,9 +246,6 @@ class ConfigManager:
                     option_node = self.make_node(action_node,option,text=new_value)
                     
                     
-                    
-
-        
 #class to parse commands.json and return commands and options
 class CommandManager:
     def __init__(self):
