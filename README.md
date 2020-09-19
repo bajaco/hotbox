@@ -23,7 +23,7 @@ Example usage to set Alt+t to open a terminal:
 6. Type in 'xterm', or the command to open your favorite terminal
 7. Choose any other options as presented
 
-That's it. Alt-t should now open a terminal window.
+That's it. Alt+t should now open a terminal window.
 
 For more information see http://openbox.org/wiki/Help:Actions
 
