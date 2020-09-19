@@ -1,9 +1,9 @@
-# ${1:Project Name}
+# Hotbox
 
 Hotbox: A CLI hotkey configurator for Openbox.
 
 Obkey in the Arch Linux AUR relies on an outdated python version.
-I wanted to create a quick and easy to use tool to set hotkeys with minimal dependancies.
+I wanted to create a quick and easy-to-use tool to set hotkeys with minimal dependancies.
 
 ## Installation
 
