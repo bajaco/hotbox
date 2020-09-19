@@ -1,0 +1,130 @@
+{
+	"Execute": {
+		"command": "", 
+		"prompt": "none", 
+		"startupnotify": {
+			"enabled": "no", 
+			"wmclass": "none", 
+			"name": "none", 
+			"icon": "none"
+		}
+	}, 
+	"ShowMenu": {
+		"menu": "", 
+		"position": ""
+	}, 
+	"NextWindow": {
+		"dialog": "list", 
+		"bar": "yes", 
+		"raise": "no", 
+		"allDesktops": "no", 
+		"panels": "no", 
+		"desktop": "no", 
+		"linear": "no", 
+		"interactive": "yes", 
+		"finalactions": ["Focus", "Raise", "Unshade"]
+	},	
+	"PreviousWindow": "", 
+	"DirectionalCycleWindows": {
+		"direction": "north", 
+		"dialog": "yes", 
+		"bar": "yes", 
+		"raise": "no", 
+		"finalactions": ["Focus", "Raise", "Unshade"], 
+		"panels": "no", 
+		"desktops": "no"
+	}, 
+	"DirectionalTargetWindow": {
+		"direction": "north", 
+		"raise": "no", 
+		"finalactions": ["Focus", "Raise", "Unshade"], 
+		"panels": "no", 
+		"desktops": "no"
+	}, 
+	"GoToDesktop": {
+		"to": "current", 
+		"wrap": "yes"
+	}, 
+	"AddDesktop": {
+		"where": "last"
+	}, 
+	"RemoveDesktop": {
+		"where": "last"
+	}, 
+	"ToggleShowDesktop": {
+		"strict": "no"
+	}, 
+	"ToggleDockAutohide": "", 
+	"Reconfigure": "", 
+	"Restart": {
+		"command": ""
+	}, "Exit": {
+	"prompt": "true"
+	}, 
+	"SessionLogout": {
+		"prompt": "true"
+	}, 
+	"Debug": {
+		"string": ""
+	}, 
+	"Focus": "", 
+	"Raise": "", 
+	"Lower": "", 
+	"RaiseLower": "", 
+	"Unfocus": "", 
+	"FocusToBottom": "", 
+	"Iconify": "", 
+	"Close": "", 
+	"ToggleShade": "", 
+	"Shade": "", 
+	"Unshade": "", 
+	"ToggleOmnipresent": "", 
+	"ToggleMaximize": "", 
+	"Maximize": "", 
+	"Unmaximize": "", 
+	"ToggleFullscreen": "", 
+	"ToggleDecorations": "", 
+	"Decorate": "", 
+	"Undecorate": "", 
+	"SendToDesktop": {
+		"to": "current", 
+		"wrap": "yes", 
+		"follow": "yes"
+	}, 
+	"Move": "", 
+	"Resize": {
+		"edge": "none"
+	}, 
+	"MoveResizeTo": {
+		"x": "current", 
+		"y": "current", 
+		"width": "current", 
+		"height": "current", 
+		"monitor": "current"
+	}, 
+	"MoveRelative": {
+		"x": "0", 
+		"y": "0"
+	}, 
+	"ResizeRelative": {
+		"left": "0", 
+		"right": "0", 
+		"top": "0", 
+		"bottom": "0"
+	}, 
+	"MoveToEdge": {
+		"direction": "north"
+	}, 
+	"GrowToEdge": {
+		"direction": "north"
+	}, 
+	"GrowToFill": "", 
+	"ShrinkToEdge": {
+		"direction": "north"
+	}, 
+	"ToggleAlwaysOnTop": "", 
+	"ToggleAlwaysOnBottom": "", 
+	"SendToLayer": {
+		"layer": "normal"
+	}
+}
