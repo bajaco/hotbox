@@ -13,6 +13,7 @@ setuptools.setup(
         long_description_markdown_type="text/markdown",
         url="https://github.com/bajaco/hotbox",
         packages=setuptools.find_packages(),
+        include_package_data=True,
         classifiers=[
             "Programming Language :: Python :: 3",
             "License :: OSI Approved :: MIT License",
@@ -23,7 +24,6 @@ setuptools.setup(
             'console_scripts': [
                 'hotbox=hotbox.__main__:main',
                 ],
-            },
-        data_files=[('./hotbox',['conf.ini'])]
+            }
 
         )
