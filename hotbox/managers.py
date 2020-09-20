@@ -22,10 +22,13 @@ class ConfigManager:
 
     def set_resource_path(self, path):
         self.config['default']['path'] = path
- 
-        with open(self.get_real_path() + '/conf.ini', 'w') as configfile:
-            self.config.write(configfile)
-        self.load_resource()
+        
+        try:
+            with open(self.get_real_path() + '/conf.ini', 'w') as configfile:
+                self.config.write(configfile)
+            self.load_resource()
+        except OSError:
+            print('Could not change resource path (Sudo required)')
     
     def refresh(self):
         self.keybinds = self.document.getElementsByTagName('keybind')
