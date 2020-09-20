@@ -10,7 +10,9 @@ class ConfigManager:
 
         #Load configuration path from conf.ini
         self.config = configparser.ConfigParser()
-        self.config.read(os.getcwd() + '/conf.ini')
+        cdir, cname = os.path.split(__file__)
+        path = os.path.join(cdir,'conf.ini')
+        self.config.read(path)
         self.load_resource()
 
     def get_resource_path(self):
@@ -18,7 +20,10 @@ class ConfigManager:
 
     def set_resource_path(self, path):
         self.config['default']['path'] = path
-        with open(os.getcwd() + '/conf.ini', 'w') as configfile:
+        cdir, cname = os.path.split(__file__)
+        path = os.path.join(cdir,'conf.ini')
+
+        with open(path, 'w') as configfile:
             self.config.write(configfile)
         self.load_resource()
     
