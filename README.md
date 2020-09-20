@@ -8,7 +8,8 @@ I wanted to create a quick and easy-to-use tool to set hotkeys with minimal depe
 ## Installation
 
 Clone the repo.
-Arch users: Available in aur:
+
+Arch users- Available in aur:
 1. clone https://aur.archlinux.org/hotbox-git.git
 2. cd hotbox-git
 3. run makepkg -si
