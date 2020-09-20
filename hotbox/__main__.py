@@ -3,6 +3,7 @@ from hotbox.managers import *
 configManager = ConfigManager()
 commandManager = CommandManager()
 
+
 #Main class for controlling program state
 class Main():
     def __init__(self, configManager, commandManager):
@@ -90,6 +91,9 @@ Main Menu:
         else:
             print('Error: Configuration file could not be loaded')
 
-main = Main(configManager,commandManager)
-#run main loop
-main.loop()
+def main():
+    main_man = Main(configManager,commandManager)
+    #run main loop
+    main_man.loop()
+
+main()
