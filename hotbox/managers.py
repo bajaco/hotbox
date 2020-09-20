@@ -21,9 +21,8 @@ class ConfigManager:
         return self.config['default']['path']
 
     def set_resource_path(self, path):
-        self.config['default']['path'] = path
-        
         try:
+            self.config['default']['path'] = path
             with open(self.get_real_path() + '/conf.ini', 'w') as configfile:
                 self.config.write(configfile)
             self.load_resource()
