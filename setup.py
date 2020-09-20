@@ -25,7 +25,7 @@ setuptools.setup(
         python_requires='>=3.6', 
         entry_points={
             'console_scripts': [
-                'hotbox=hotbox.__main__:main',
+                'hotbox=hotbox.__main__',
                 ],
             }
 
