@@ -24,6 +24,6 @@ setuptools.setup(
                 'hotbox=hotbox.__main__:main',
                 ],
             },
-        data_files=[('.',['conf.ini'])]
+        data_files=[('./hotbox',['conf.ini'])]
 
         )
