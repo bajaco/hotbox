@@ -95,5 +95,3 @@ def main():
     main_man = Main(configManager,commandManager)
     #run main loop
     main_man.loop()
-
-main()
