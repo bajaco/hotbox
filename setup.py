@@ -23,5 +23,7 @@ setuptools.setup(
             'console_scripts': [
                 'hotbox=hotbox.__main__:main',
                 ],
-            }
+            },
+        data_files=[('hotbox',['conf.ini'])]
+
         )
