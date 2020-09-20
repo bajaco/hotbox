@@ -23,8 +23,6 @@ class ConfigManager:
     def set_resource_path(self, path):
         self.config['default']['path'] = path
  
-
-
         with open(self.get_real_path() + '/conf.ini') as configfile:
             self.config.write(configfile)
         self.load_resource()
@@ -256,7 +254,7 @@ class ConfigManager:
 #class to parse commands.json and return commands and options
 class CommandManager:
     def __init__(self):
-        with open('hotbox/commands.json') as f:
+        with open(os.path.abspath(os.path.dirname(__file__)) + '/commands.json') as f:
             self.commands = json.load(f)
 
     def get_commands(self):
