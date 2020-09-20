@@ -10,8 +10,12 @@ class ConfigManager:
 
         #Load configuration path from conf.ini
         self.config = configparser.ConfigParser()
-        self.config.read('hotbox/conf.ini')
+        self.config.read(self.get_real_path() + '/conf.ini')
         self.load_resource()
+    
+    def get_real_path(self):
+        return os.path.abspath(os.path.dirname(__file__)))
+
 
     def get_resource_path(self):
         return self.config['default']['path']
@@ -21,7 +25,7 @@ class ConfigManager:
  
 
 
-        with open('hotbox/conf.ini', 'w') as configfile:
+        with open(self.get_real_path() + '/conf.ini') as configfile:
             self.config.write(configfile)
         self.load_resource()
     
