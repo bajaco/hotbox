@@ -12,6 +12,9 @@ setuptools.setup(
         long_description=long_description,
         long_description_markdown_type="text/markdown",
         url="https://github.com/bajaco/hotbox",
+        package_data={
+            "": ["*.json", "*.ini"],
+            },
         packages=setuptools.find_packages(),
         include_package_data=True,
         classifiers=[
