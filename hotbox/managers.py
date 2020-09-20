@@ -14,7 +14,7 @@ class ConfigManager:
         self.load_resource()
     
     def get_real_path(self):
-        return os.path.abspath(os.path.dirname(__file__)))
+        return os.path.abspath(os.path.dirname(__file__))
 
 
     def get_resource_path(self):
