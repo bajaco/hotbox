@@ -26,6 +26,7 @@ class ConfigManager:
             with open(self.get_real_path() + '/conf.ini', 'w') as configfile:
                 self.config.write(configfile)
             self.load_resource()
+            print('Resource file set to ' self.get_resource_path() + '.')
         except OSError:
             print('Could not change resource path (Sudo required)')
     

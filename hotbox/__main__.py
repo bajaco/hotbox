@@ -60,7 +60,6 @@ Main Menu:
                self.configManager.get_resource_path() + ': ')
         if value != '':
             self.configManager.set_resource_path(value)
-            print('Resource path set to ' + self.configManager.get_resource_path() + '.')
     
     #List currently used hotkeys
     def list_keys(self):
